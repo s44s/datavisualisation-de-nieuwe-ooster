@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Nieuwe Ooster: Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container container-main">
+       <h1>Verbanden tussen WO-II slachtoffers gelegen op De Nieuwe Ooster</h1>
+        <div class="visualisation">
+
+        </div>
+    </div>
+    <div class="container-sidebar">
+        <h2>Filter</h2>
+        <p>Selecteer een filter om verbanden tussen oorlogsslachtoffers te ontdekken.
+        </p>
+        <!--
+        <div class="filters">
+            <button>Geboortedatum</button>
+            <button>Sterftedatum</button>
+            <button>Doodsoorzaak</button>
+            <button>Beroep</button>
+        </div>
+-->
+        <select id="song_select">
+            <option value="call_me_al.json">You Can Call Me Al</option>
+            <option value="sledgehammer_2_rounds.json">Sledgehammer</option>
+            <option value="poker_face.json">Poker Face</option>
+            <option value="jolene.json">Jolene</option>
+            <option value="helplessness_blues.json">Helplessness Blues</option>
+            <option value="she_said.json">She Said She Said</option>
+            <option value="short_skirt.json">Short Skirt, Long Jacket</option>
+        </select>
+        <div id="controls">
+            <div id="layouts" class="control">
+                <h3>Layout</h3>
+                <a id="force" class="active">Force Directed</a>
+                <a id="radial">Artists</a>
+            </div>
+            <div id="filters" class="control">
+                <h3>Filter</h3>
+                <a id="all" class="active">All</a>
+                <a id="popular">Popular</a>
+                <a id="obscure">Obscure</a>
+            </div>
+            <div id="sorts" class="control">
+                <h3>Sort</h3>
+                <a id="songs" class="active">Songs</a>
+                <a id="links">Links</a>
+            </div>
+            <!--
+      <div id="search_section" class="control">
+        <form id="search_form" action=""  method="post">
+          <p class="search_title">Search <input type="text" class="text-input" id="search" value="" /></p>
+        </form>
+      </div>
+-->
+        </div>
+        <div class="toggle-sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="js/tooltip.js"></script>
+        <script src="js/fisheye.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+
+</html>
